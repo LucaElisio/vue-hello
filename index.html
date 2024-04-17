@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue-Hello</title>
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- VueJs -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    
+    <div id="app">
+
+        <!-- <h1>{{greeting}}</h1> -->
+        <label for="message">Cosa dice gerry?</label>
+        <input type="text" id="message" v-model="message">
+        <button @click="print">Stampa il messaggio</button>
+        <h1>{{output}}</h1>
+        <img :src="img" class="gerry" alt="">
+
+    </div>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
